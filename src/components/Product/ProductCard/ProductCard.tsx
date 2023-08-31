@@ -7,7 +7,7 @@ interface ProductCard {
 }
 
 const ProductCard = ({ image, title, price }: ProductCard) => {
-  const formatCurrency = (value) => {
+  const formatCurrency = (value: any) => {
     const formattedValue = (value / 100).toLocaleString("pt-BR", {
       style: "currency",
       currency: "BRL",

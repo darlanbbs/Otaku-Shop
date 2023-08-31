@@ -3,6 +3,7 @@
 import { MyContextProvider } from "@/contexts/FilterContext";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar/Header";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,7 +14,7 @@ export const metadata = {
   title: "HomePage",
   description: "HomePage",
 };
-
+const client = new QueryClient();
 export default function RootLayout({
   children,
 }: {
@@ -30,7 +31,9 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <Navbar />
-        <MyContextProvider>{children}</MyContextProvider>
+        <QueryClientProvider client={client}>
+          <MyContextProvider>{children}</MyContextProvider>
+        </QueryClientProvider>
       </body>
     </html>
   );

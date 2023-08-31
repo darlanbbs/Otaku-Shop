@@ -7,10 +7,6 @@ export const Container = styled(C.Container)`
   justify-content: center;
   align-items: center;
   height: 100vh;
-
-  @media (max-width: 768px) {
-    height: 100%;
-  }
 `;
 
 export const SubContainer = styled(C.Container)`

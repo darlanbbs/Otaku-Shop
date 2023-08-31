@@ -9,7 +9,6 @@ type Props = {};
 
 const ProductList = (props: Props) => {
   const { data } = useProducts();
-
   return (
     <Container fluid>
       <SubContainer fluid="xl">

@@ -1,12 +1,7 @@
 "use client";
-
+import * as C from "./styles";
 import React from "react";
-import {
-  AccordionBody,
-  AccordionHeader,
-  AccordionItem,
-  UncontrolledAccordion,
-} from "reactstrap";
+import { AccordionBody, AccordionHeader, AccordionItem } from "reactstrap";
 
 type Props = {
   id: string;
@@ -17,18 +12,14 @@ type Props = {
 const Accordions = ({ id, title, text }: Props) => {
   return (
     <div>
-      <UncontrolledAccordion
-        defaultOpen={[id]}
-        stayOpen
-        style={{ width: "1250px" }}
-      >
+      <C.UncontrolledAccordion defaultOpen={[id]} stayOpen>
         <AccordionItem>
           <AccordionHeader targetId={id}>{title}</AccordionHeader>
           <AccordionBody accordionId={id}>
             <strong>{text}</strong>
           </AccordionBody>
         </AccordionItem>
-      </UncontrolledAccordion>
+      </C.UncontrolledAccordion>
     </div>
   );
 };
