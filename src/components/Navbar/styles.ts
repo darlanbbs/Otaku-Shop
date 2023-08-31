@@ -9,6 +9,7 @@ export const Navbar = styled(C.Navbar)`
   align-items: center;
   a {
     color: #fff;
+    cursor: pointer;
   }
 `;
 
@@ -21,6 +22,7 @@ export const SubNavbar = styled(C.Container)`
   align-items: center;
   a {
     color: #000;
+    cursor: pointer;
   }
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;

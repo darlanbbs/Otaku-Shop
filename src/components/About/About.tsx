@@ -1,16 +1,19 @@
-'use client'
+"use client";
 
-import React from 'react'
-import * as C from './styles'
-type Props = {}
+import React from "react";
+import * as C from "./styles";
+type Props = {
+  title: string;
+  text: string;
+};
 
-const About = (props: Props) => {
+const About = ({ text, title }: Props) => {
   return (
     <C.Container>
-        <C.Title>Otaku Shop</C.Title>
-        <C.Text>Bem-vindo! à nossa loja online, onde oferecemos produtos de alta qualidade a preços acessíveis. Temos uma ampla variedade de categorias para que você possa encontrar o que precisa com facilidade. Nos esforçamos para fornecer um serviço excepcional e esperamos que encontre tudo o que precisa em nossa loja online. Obrigado por nos escolher!</C.Text>
+      <C.Title>{title}</C.Title>
+      <C.Text>{text}</C.Text>
     </C.Container>
-  )
-}
+  );
+};
 
-export default About
+export default About;

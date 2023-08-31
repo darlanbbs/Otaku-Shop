@@ -9,7 +9,6 @@ export const Container = styled(C.Container)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
 `;
 
 export const Types = styled.ul`
@@ -36,4 +35,10 @@ export const FilterItem = styled.li<FilterItemProps>`
   color: ${(props) => (props.selected ? "#04071d" : "#737380")};
 
   border-bottom: ${(props) => (props.selected ? "4px solid #04071d" : "")};
+  @media (max-width: 768px) {
+    font-size: ${(props) => (props.selected ? "14px" : "12px")};
+    font-weight: ${(props) => (props.selected ? "400" : "300")};
+
+    line-height: 18px;
+  }
 `;

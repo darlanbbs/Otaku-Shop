@@ -3,17 +3,25 @@ import { Black_Ops_One } from "next/font/google";
 import React from "react";
 import { NavbarBrand, NavItem, NavLink } from "reactstrap";
 import * as C from "./styles";
-import Input from "../Input/Input";
+import { useRouter } from "next/navigation";
 import CartControl from "../CartItems/CartControl";
 const BlackOpsOne = Black_Ops_One({
   subsets: ["cyrillic-ext"],
   weight: ["400"],
 });
 function Header(args: any) {
+  const router = useRouter();
+
+  const handleNavigate = (navigate: string) => {
+    router.push(navigate);
+  };
   return (
-    <header>
+    <>
       <C.Navbar {...args}>
-        <NavbarBrand href="/" className={BlackOpsOne.className}>
+        <NavbarBrand
+          onClick={() => handleNavigate("/")}
+          className={BlackOpsOne.className}
+        >
           Otaku Shop
         </NavbarBrand>
         <C.NavMedium navbar>
@@ -24,12 +32,13 @@ function Header(args: any) {
         </C.NavMedium>
       </C.Navbar>
       <C.SubNavbar {...args} fluid>
-        <NavLink href="/">Home</NavLink>
-        <NavLink href="">Roupas</NavLink>
-        <NavLink href="">Figures</NavLink>
-        <NavLink href="">Acessórios</NavLink>
+        <NavLink onClick={() => handleNavigate("/")}>Home</NavLink>
+        <NavLink onClick={() => handleNavigate("/sobre")}>Sobre</NavLink>
+        <NavLink onClick={() => handleNavigate("/perguntas")}>
+          Perguntas
+        </NavLink>
       </C.SubNavbar>
-    </header>
+    </>
   );
 }
 

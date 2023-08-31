@@ -1,8 +1,8 @@
 "use client";
 
-import { Navbar } from "@/components/Navbar/styles";
 import { MyContextProvider } from "@/contexts/FilterContext";
 import { Inter } from "next/font/google";
+import Navbar from "@/components/Navbar/Header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,10 +29,8 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
-        <MyContextProvider>
-          <Navbar />
-          {children}
-        </MyContextProvider>
+        <Navbar />
+        <MyContextProvider>{children}</MyContextProvider>
       </body>
     </html>
   );
