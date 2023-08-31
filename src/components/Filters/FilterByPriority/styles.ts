@@ -25,6 +25,14 @@ export const PriorityFilter = styled.ul`
   li + li {
     margin-top: 4px;
   }
+  @media (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
 `;
 
 export const StyledButton = styled.button`
@@ -67,5 +75,8 @@ export const StyledButton = styled.button`
   &:active {
     box-shadow: none;
     transform: translateY(0);
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;

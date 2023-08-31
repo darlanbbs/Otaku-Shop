@@ -26,6 +26,11 @@ export const SearchInput = styled.input`
   &:focus {
     color: #000000;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 `;
 
 export const SearchButton = styled.button`

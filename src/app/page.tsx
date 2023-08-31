@@ -10,16 +10,13 @@ import { MyContextProvider } from "@/contexts/FilterContext";
 export default function Home() {
   const client = new QueryClient();
   return (
-    <MyContextProvider>
-      <Navbar />
-      <QueryClientProvider client={client}>
-        <main>
-          <CarouselComponent />
-          <About />
-          <FilterBar />
-          <ProductList />
-        </main>
-      </QueryClientProvider>
-    </MyContextProvider>
+    <QueryClientProvider client={client}>
+      <main>
+        <CarouselComponent />
+        <About />
+        <FilterBar />
+        <ProductList />
+      </main>
+    </QueryClientProvider>
   );
 }

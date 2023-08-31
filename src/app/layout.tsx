@@ -1,5 +1,7 @@
 "use client";
 
+import { Navbar } from "@/components/Navbar/styles";
+import { MyContextProvider } from "@/contexts/FilterContext";
 import { Inter } from "next/font/google";
 
 const inter = Inter({
@@ -25,7 +27,13 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+
+      <body className={inter.className}>
+        <MyContextProvider>
+          <Navbar />
+          {children}
+        </MyContextProvider>
+      </body>
     </html>
   );
 }

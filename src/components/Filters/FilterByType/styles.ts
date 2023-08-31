@@ -9,6 +9,7 @@ export const Container = styled(C.Container)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
 `;
 
 export const Types = styled.ul`
@@ -17,6 +18,10 @@ export const Types = styled.ul`
   align-items: center;
   gap: 10px;
   list-style: none;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    justify-content: start;
+  }
 `;
 
 export const FilterItem = styled.li<FilterItemProps>`

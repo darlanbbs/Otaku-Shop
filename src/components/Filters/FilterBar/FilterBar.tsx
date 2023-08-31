@@ -22,17 +22,22 @@ const FilterBar = (props: Props) => {
   }
 
   return (
-    <Container fluid="xl">
-      <FilterByType />
-      <Input
-        onChange={(e) => getSearch(e.target.value)}
-        value={useContext.search}
-        type="text"
-        className="searchTerm"
-        placeholder="Procurando por algo?"
-      />
-      <FilterByPriority />
-    </Container>
+    <div>
+      <Container fluid="xl">
+        <FilterByType />
+        <FilterByPriority />
+      </Container>
+      <Container fluid="xl">
+        <Input
+          onChange={(e) => getSearch(e.target.value)}
+          value={useContext.search}
+          type="text"
+          className="searchTerm"
+          placeholder="Procurando por algo?"
+        />
+        <FilterByPriority />
+      </Container>
+    </div>
   );
 };
 

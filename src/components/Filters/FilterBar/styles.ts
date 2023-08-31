@@ -7,4 +7,10 @@ export const Container = styled(C.Container)`
   align-items: center;
   position: relative;
   margin-top: 35px;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
 `;
