@@ -13,12 +13,12 @@ const fetcher = (query: string): AxiosPromise<ProductsFetchResponse> => {
 
 export function useProducts() {
   const { useContext } = useForm();
-  const query = mountQuery(useContext.type, useContext.priority);
   const searchDeffered = useDeferredValue(useContext.search);
+  const query = mountQuery(useContext.type, useContext.priority);
   const { data } = useQuery({
     queryFn: () => fetcher(query),
     queryKey: ["products", useContext.type, useContext.priority],
-    staleTime: 1000 * 60 * 1,
+    staleTime: 1000 * 60 * 5,
   });
 
   const products = data?.data?.data?.allProducts;

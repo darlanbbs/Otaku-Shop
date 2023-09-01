@@ -1,12 +1,19 @@
+import { useRouter } from "next/navigation";
 import React from "react";
 import { Card } from "./styles";
 interface ProductCard {
   image: string;
   title: string;
   price: number;
+  id: string;
 }
 
-const ProductCard = ({ image, title, price }: ProductCard) => {
+const ProductCard = ({ image, title, price, id }: ProductCard) => {
+  const router = useRouter();
+
+  const handleNavigate = () => {
+    router.push("/product?id=" + id);
+  };
   const formatCurrency = (value: any) => {
     const formattedValue = (value / 100).toLocaleString("pt-BR", {
       style: "currency",
@@ -16,7 +23,7 @@ const ProductCard = ({ image, title, price }: ProductCard) => {
   };
   const newPrice = formatCurrency(price);
   return (
-    <Card>
+    <Card onClick={handleNavigate}>
       <img src={image} />
       <div>
         <h3>{title}</h3>
