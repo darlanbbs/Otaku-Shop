@@ -22,3 +22,8 @@ export interface ProductsFetchResponse {
 export interface ProductInCart extends Products {
   quantity: number;
 }
+
+export interface Pagination extends Products {
+  page: number;
+  limit: number;
+}

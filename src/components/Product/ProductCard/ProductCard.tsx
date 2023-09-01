@@ -1,6 +1,7 @@
 import { useRouter } from "next/navigation";
 import React from "react";
 import { Card } from "./styles";
+import Pagination from "@/components/Pagination/Pagination";
 interface ProductCard {
   image: string;
   title: string;

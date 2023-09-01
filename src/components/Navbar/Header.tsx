@@ -25,7 +25,7 @@ function Header(args: any) {
           Otaku Shop
         </NavbarBrand>
         <C.NavMedium navbar>
-          <NavLink href="">
+          <NavLink  onClick={() => handleNavigate("/cart")}>
             <CartControl />
           </NavLink>
           <NavItem></NavItem>

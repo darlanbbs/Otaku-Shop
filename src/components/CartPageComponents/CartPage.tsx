@@ -81,10 +81,6 @@ const CartPage = (props: Props) => {
           <p>{cartTotal}</p>
         </TotalItem>
         <TotalItem>
-          <p>Entrega</p>
-          <p>{formatCurrency(refatoredValue)}</p>
-        </TotalItem>
-        <TotalItem>
           <p>Total</p>
           <p>{cartTotalWithDelivery}</p>
         </TotalItem>

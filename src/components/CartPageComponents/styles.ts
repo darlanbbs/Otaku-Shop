@@ -65,15 +65,13 @@ export const TotalItem = styled.div`
 
 export const StyledButton = styled.button`
   appearance: none;
-  background-color: #000000;
+  background-color: #000;
   border: 2px solid #1a1a1a;
   border-radius: 15px;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
@@ -88,7 +86,7 @@ export const StyledButton = styled.button`
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 250px;
+  width: 100%;
   will-change: transform;
 
   &:disabled {

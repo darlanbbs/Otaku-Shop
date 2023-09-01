@@ -20,3 +20,14 @@ export const ListContainer = styled.div`
 
   margin-top: 32px;
 `;
+
+export const PaginationArea = styled(C.Container)`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+`;
