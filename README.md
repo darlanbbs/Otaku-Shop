@@ -1,5 +1,5 @@
 # Visão Geral
-Bem-vindo ao repositório do projeto OtakuShop E-commerce! Este é um e-commerce dedicado a roupas, figures e acessórios relacionados a animes e cultura otaku. Este README fornecerá informações sobre como configurar e executar o projeto localmente.
+Bem-vindo ao repositório do projeto OtakuShop E-commerce! Este é um e-commerce dedicado a roupas, figures e acessórios relacionados a animes e cultura otaku. Este README fornecerá informações perguntas frequentes como configurar e executar o projeto localmente.
 
 
 # Pré-requisitos
@@ -45,4 +45,22 @@ A API estará disponível em http://localhost:3333.
 
 O aplicativo estará disponível em http://localhost:3000
 
+# Features
 
+Ao selecionar o produto
+![Web1](https://github.com/darlanbbs/imgs/blob/main/Contents/productPage.png)
+
+Ao ir para a pagina de carrinhos
+![Web1](https://github.com/darlanbbs/imgs/blob/main/Contents/cartPage.png)
+
+Ao ir para a pagina de sobre nós
+
+![Web1](https://github.com/darlanbbs/imgs/blob/main/Contents/sobrePage.png)
+
+Ao ir para a pagina de perguntas frequentes
+
+![Web1](https://github.com/darlanbbs/imgs/blob/main/Contents/perguntasPage.png)
+
+Ao ir para a pagina de contato
+
+![Web1](https://github.com/darlanbbs/imgs/blob/main/Contents/contactPage.png)
