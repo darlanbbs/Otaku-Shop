@@ -25,7 +25,7 @@ function Header(args: any) {
           Otaku Shop
         </NavbarBrand>
         <C.NavMedium navbar>
-          <NavLink  onClick={() => handleNavigate("/cart")}>
+          <NavLink onClick={() => handleNavigate("/cart")}>
             <CartControl />
           </NavLink>
           <NavItem></NavItem>
@@ -34,6 +34,7 @@ function Header(args: any) {
       <C.SubNavbar {...args} fluid>
         <NavLink onClick={() => handleNavigate("/")}>Home</NavLink>
         <NavLink onClick={() => handleNavigate("/sobre")}>Sobre</NavLink>
+        <NavLink onClick={() => handleNavigate("/contact")}>Contato</NavLink>
         <NavLink onClick={() => handleNavigate("/perguntas")}>
           Perguntas
         </NavLink>
