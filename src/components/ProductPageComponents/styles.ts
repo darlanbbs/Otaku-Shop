@@ -65,8 +65,7 @@ export const BuyButton = styled.button`
   -webkit-user-select: none;
   touch-action: manipulation;
   width: 150px;
-  min-height: 60px;
-  max-width: 100px;
+  height: 60px;
   will-change: transform;
 
   &:disabled {
@@ -81,6 +80,9 @@ export const BuyButton = styled.button`
   &:active {
     box-shadow: none;
     transform: translateY(0);
+  }
+  @media (max-width: 968px) {
+    height: 40px;
   }
 `;
 

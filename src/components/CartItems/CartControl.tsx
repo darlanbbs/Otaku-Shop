@@ -5,10 +5,11 @@ import * as C from "./styles";
 
 const CartControl = () => {
   const { value } = useLocalStorage("cart-items", []);
+  console.log(value, "value");
   return (
     <C.Container>
       <CartIcon />
-      <C.CartCount>0</C.CartCount>
+      {value.length > 0 && <C.CartCount>{value.length}</C.CartCount>}
     </C.Container>
   );
 };

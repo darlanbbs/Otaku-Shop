@@ -9,6 +9,7 @@ type ProductPageProps = {
   price: number;
   text: string;
   type: string;
+  handleChange: () => void;
 };
 
 const ProductPageComponents = ({
@@ -17,6 +18,7 @@ const ProductPageComponents = ({
   price,
   text,
   type,
+  handleChange,
 }: ProductPageProps) => {
   const formatCurrency = (value: any) => {
     const formattedValue = (value / 100).toLocaleString("pt-BR", {
@@ -37,7 +39,7 @@ const ProductPageComponents = ({
           <C.Price>{newPrice}</C.Price>
           <C.Description>{text}</C.Description>
           <C.BuyButtonArea>
-            <C.BuyButton>Comprar</C.BuyButton>
+            <C.BuyButton onClick={handleChange}>Comprar</C.BuyButton>
           </C.BuyButtonArea>
         </div>
       </C.SubContainer>
