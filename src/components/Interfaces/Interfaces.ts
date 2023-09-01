@@ -7,16 +7,18 @@ interface Products {
   category?: string;
 }
 
-
 export interface ProductsResponse {
   data: {
-    Product: Products
+    Product: Products;
+  };
 }
-}
-
 
 export interface ProductsFetchResponse {
   data: {
     allProducts: Products[];
   };
+}
+
+export interface ProductInCart extends Products {
+  quantity: number;
 }
