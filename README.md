@@ -49,19 +49,19 @@ O aplicativo estará disponível em http://localhost:3000
 # Features
 
 Ao selecionar o produto
-![Web1](https://github.com/darlanbbs/imgs/blob/main/Contents/productPage.png)
+![Web1](https://github.com/darlanbbs/Otaku-Shop/blob/main/featuresLayout/productPage.png)
 
 Ao ir para a pagina de carrinhos
-![Web1](https://github.com/darlanbbs/imgs/blob/main/Contents/cartPage.png)
+![Web1](https://github.com/darlanbbs/Otaku-Shop/blob/main/featuresLayout/cartPage.png)
 
 Ao ir para a pagina de sobre nós
 
-![Web1](https://github.com/darlanbbs/imgs/blob/main/Contents/sobrePage.png)
+![Web1](https://github.com/darlanbbs/Otaku-Shop/blob/main/featuresLayout/sobrePage.png)
 
 Ao ir para a pagina de perguntas frequentes
 
-![Web1](https://github.com/darlanbbs/imgs/blob/main/Contents/perguntasPage.png)
+![Web1](https://github.com/darlanbbs/Otaku-Shop/blob/main/featuresLayout/perguntasPage.png)
 
 Ao ir para a pagina de contato
 
-![Web1](https://github.com/darlanbbs/imgs/blob/main/Contents/contactPage.png)
+![Web1](https://github.com/darlanbbs/Otaku-Shop/blob/main/featuresLayout/contactPage.png)
