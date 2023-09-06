@@ -43,7 +43,7 @@ A API estará disponível em http://localhost:3333.
 - Navegue até a pasta ecommercechall(digite: cd ecommercechall)
 - Digite:npm install
 - Digite:npm run dev
-
+- crie um arquivo .env e digite NEXT_PUBLIC_API_URL = "sua url"
 O aplicativo estará disponível em http://localhost:3000
 
 # Features
