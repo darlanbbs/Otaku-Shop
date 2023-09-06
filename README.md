@@ -6,7 +6,7 @@ Bem-vindo ao repositório do projeto OtakuShop E-commerce! Este é um e-commerce
 Certifique-se de que você tenha o seguinte software instalado em sua máquina:
 
 Node.js (versão 14 ou superior)<br/>
-npm ou Yarn (recomendado)<br/>
+npm(recomendado)<br/>
 Git<br/>
 
 # Tecnologias Utilizadas
@@ -32,7 +32,7 @@ Siga as etapas abaixo para configurar e executar o projeto localmente:
 2. Configurar a API
 - Abra o terminal/cmd
 - Navegue até a pasta api(digite: cd api)
-- Digite:npm install
+- Digite:npm install 
 - Digite:npm start
 
 A API estará disponível em http://localhost:3333.
@@ -43,7 +43,8 @@ A API estará disponível em http://localhost:3333.
 - Navegue até a pasta ecommercechall(digite: cd ecommercechall)
 - Digite:npm install
 - Digite:npm run dev
-- crie um arquivo .env e digite NEXT_PUBLIC_API_URL = "sua url"
+- Crie um arquivo .env e digite NEXT_PUBLIC_API_URL = "http://localhost:3333/"<br>
+
 O aplicativo estará disponível em http://localhost:3000
 
 # Features
