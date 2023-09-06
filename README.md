@@ -25,23 +25,24 @@ TypeScript: Superset do JavaScript com tipagem estática.<br/>
 Siga as etapas abaixo para configurar e executar o projeto localmente:
 
 1. Clonar o Repositório
-- git clone https://github.com/seu-usuario/otakushop.git
-- cd otakushop
+- Abra o terminal/cmd
+- Digite:git clone https://github.com/seu-usuario/otakushop.git
+- Digite:cd otakushop
   
 2. Configurar a API
-- Navegue até a pasta api
-- cd api
-- npm install
-- npm start
+- Abra o terminal/cmd
+- Navegue até a pasta api(digite: cd api)
+- Digite:npm install
+- Digite:npm start
 
 A API estará disponível em http://localhost:3333.
 
 3. Configurar o Frontend
 
-- Navegue até a pasta ecommercechall:
-- cd ../ecommercechall
-- npm install
-- npm run dev
+- Abra o terminal/cmd
+- Navegue até a pasta ecommercechall(digite: cd ecommercechall)
+- Digite:npm install
+- Digite:npm run dev
 
 O aplicativo estará disponível em http://localhost:3000
 
